@@ -8,6 +8,7 @@ import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { FormsModule } from "@angular/forms";
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [		AppComponent,
@@ -19,6 +20,7 @@ import { DashboardComponent } from './Dashboard/Dashboard.component';
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

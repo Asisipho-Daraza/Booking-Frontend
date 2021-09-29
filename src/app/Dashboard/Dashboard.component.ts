@@ -8,7 +8,7 @@ import { HairNailDataService } from "../hairNailData.service";
   styleUrls: ["./Dashboard.component.css"],
 })
 export class DashboardComponent implements OnInit {
-  book: any = {};
+  //book: any = {};
 
   constructor(
     private __hairnail: HairNailDataService,
@@ -20,9 +20,9 @@ export class DashboardComponent implements OnInit {
   //     this.book = data;
   //   });
   // }
-
-  async ngOnInit() {
-    this.book = await this.__hairnail.getAllDetails();
-    console.log(await this.__hairnail.getAllDetails());
-  }
+ngOnInit(){}
+  // async ngOnInit() {
+  //   this.book = await this.__hairnail.getAllDetails();
+  //   console.log(await this.__hairnail.getAllDetails());
+  // }
 }
