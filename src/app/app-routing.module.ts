@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { BookingsComponent } from './bookings/bookings.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'bookings', component: BookingsComponent}
   
 ];
 

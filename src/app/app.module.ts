@@ -9,11 +9,13 @@ import { FormsModule } from "@angular/forms";
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BookingsComponent } from './bookings/bookings.component';
 
 @NgModule({
-  declarations: [		AppComponent,
+  declarations: [			AppComponent,
       LoginComponent,
-      DashboardComponent
+      DashboardComponent,
+      BookingsComponent
    ],
   imports: [
     BrowserModule,
