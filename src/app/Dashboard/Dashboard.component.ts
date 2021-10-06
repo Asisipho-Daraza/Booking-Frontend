@@ -1,28 +1,24 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import { HairNailDataService } from "../hairNailData.service";
+import { Subscription } from "rxjs";
+import { HairNailService } from "../services/hair-nail.service";
 
 @Component({
-  selector: "app-Dashboard",
-  templateUrl: "./Dashboard.component.html",
-  styleUrls: ["./Dashboard.component.css"],
+  selector: "app-dashboard",
+  templateUrl: "./dashboard.component.html",
+  styleUrls: ["./dashboard.component.css"],
 })
 export class DashboardComponent implements OnInit {
-  //book: any = {};
+  admin: any = {};
 
-  constructor(
-    private __hairnail: HairNailDataService,
-    private router: Router
-  ) {}
+  constructor(private __hairnail: HairNailService) {}
 
-  // ngOnInit(): void {
-  //   this.__hairnail.getAllDetails().subscribe((data: any) => {
-  //     this.book = data;
-  //   });
-  // }
-ngOnInit(){}
-  // async ngOnInit() {
-  //   this.book = await this.__hairnail.getAllDetails();
-  //   console.log(await this.__hairnail.getAllDetails());
-  // }
+  ngOnInit() {
+    this.load();
+  }
+
+  async load() {
+    this.admin = await this.__hairnail.getAllDetails();
+    console.log(await this.__hairnail.getAllDetails());
+  }
 }
