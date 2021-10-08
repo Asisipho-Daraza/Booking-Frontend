@@ -1,103 +1,33 @@
-<!-- <div class="col-lg-8">
-
-    <table id="myTable" class="table text-justify table-striped">
-
-
-        <thead class="tableh1">
-            <th class="">Name of Nails or hair</th>
-            <th class="">Price</th>
-            <th class="">description</th>
-            <th class=""></th>
-           
-            <th class="col-1"></th>
-            <th class="col-1"></th> 
-        </thead>
-
-        <tbody id="tableBody">
-
-            <tr *ngFor="let admins of admin">
-
-                <td>{{admins.name}}</td>
-                <td>{{admins.price}}</td>
-                <td>{{admins.description}}</td>
-
-            </tr>
-
-        </tbody>
-
-    </table>
-</div> -->
-<!-- Nav Bar -->
-
-<div class="wrapper">
-    <nav>
-        <a href="#" class="logo">AAA</a>
-        <ul>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Features</a>
-            </li>
-            <li>
-                <a href="#">Pricing</a>
-            </li>
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#">Contacts</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-
-
 <!-- Boxes -->
+<div class="container page-wrapper" *ngFor="let admins of admin" mt-5px>
+    <div class="page-inner">
+        <div class="row">
+            <div class="el-wrapper">
+                <div class="box-up">
+                    <img class="img" src="{{admins.image}}" alt="">
+                    <div class="img-info">
+                        <div class="info-inner">
+                            <span class="p-name">{{admins.hairnailname}}</span>
+                            <span class="p-company">{{admins.name}}'s Beauty Spa</span>
+                        </div>
+                        <div class="a-size">Available Length : <span class="size">S , M , L , XL</span></div>
+                    </div>
+                </div>
 
+                <div class="box-down">
+                    <div class="h-bg">
+                        <div class="h-bg-inner"></div>
+                    </div>
 
-<script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-<div class="container" *ngFor="let admins of admin">
-    <div class="block">
-        <div class="overlay"></div>
-        <div class="block--text">
-            <div class="text--head">{{admins.name}}</div>
-            <div class="text--quote">{{admins.description}}</div>
-            <div class="text--person">R{{admins.price}}</div>
+                    <a class="cart" (click)="book()">
+                        <span class="price">R{{admins.price}}</span>
+                        <span class="add-to-cart">
+                            <span class="txt">Book
+                                Appointment</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- <div class="block">
-        <div class="overlay"></div>
-        <div class="block--text">
-            <div class="text--head">Never Give Up</div>
-            <div class="text--quote">“It’s hard to beat a person who never gives up.”</div>
-            <div class="text--person">Babe Ruth</div>
-        </div>
-    </div>
-
-    <div class="block">
-        <div class="overlay"></div>
-        <div class="block--text">
-            <div class="text--head">Do it</div>
-            <div class="text--quote">“Do one thing every day that scares you.”</div>
-            <div class="text--person">Eleanor Roosevelt</div>
-        </div>
-    </div> -->
 </div>
-
-<!-- Footer -->
-
-<footer class="page-footer font-small #da9970">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="color: black;">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/" style="color: black;"> asisiphodaraza.com</a>
-    </div>
-    <!-- Copyright -->
-
-</footer>

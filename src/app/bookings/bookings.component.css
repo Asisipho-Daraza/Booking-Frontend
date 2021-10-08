@@ -1,0 +1,56 @@
+body {
+    background-image: linear-gradient(to right, #7bf0a4, #f7d486, #f27a7d);
+}
+
+.container {
+    background-image: radial-gradient(#f6d5f7, #fbe9d7);
+    left: 30%;
+    top: 20%;
+    position: absolute;
+    box-shadow: 1px 1px 3px rgb(37, 35, 35);
+    border-radius: 1rem;
+}
+
+.calendar-container {
+    position: relative;
+    width: 500px;
+}
+
+.calendar-container header {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-size: 30px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #432371, #f89b5e);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+}
+
+.year {
+    float: right;
+    transform: translateY(-40px);
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead {
+    color: red;
+    font-weight: 400;
+}
+
+.table td {
+    text-align: center;
+    padding: 10px;
+}
+
+#pre {
+    color: rgb(182, 173, 173);
+}
+
+#today {
+    color: rgb(0, 4, 255);
+    font-size: 18px;
+}

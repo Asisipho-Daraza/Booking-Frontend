@@ -11,7 +11,7 @@ import { HairNailService } from "../services/hair-nail.service";
 export class DashboardComponent implements OnInit {
   admin: any = {};
 
-  constructor(private __hairnail: HairNailService) {}
+  constructor(private __hairnail: HairNailService, private router: Router) {}
 
   ngOnInit() {
     this.load();
@@ -20,5 +20,9 @@ export class DashboardComponent implements OnInit {
   async load() {
     this.admin = await this.__hairnail.getAllDetails();
     console.log(await this.__hairnail.getAllDetails());
+  }
+
+  book() {
+    this.router.navigate(["/bookings"]);
   }
 }

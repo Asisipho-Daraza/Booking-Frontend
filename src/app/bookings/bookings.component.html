@@ -1,4 +1,92 @@
-<!-- <mdb-calendar [events]="events" (eventEdited)="onEventEdit($event)" (eventAdded)="onEventAdd($event)"
-              (eventDeleted)="onEventDelete($event)"></mdb-calendar> -->
+<head>
+    <title>Calendar</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
 
-<p>Works</p>
+<body>
+    <div class="container">
+        <div class="calendar-container">
+
+            <header>
+                <div class="date">3</div>
+                <div class="month">June</div>
+                <div class="year">2020</div>
+            </header>
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+
+                        <td>SUN</td>
+                        <td>MON</td>
+                        <td>TUE</td>
+                        <td>WED</td>
+                        <td>THU</td>
+                        <td>FRI</td>
+                        <td>SAT</td>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td id="pre">31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td id="today">3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td id="pre">1</td>
+                        <td id="pre">2</td>
+                        <td id="pre">3</td>
+                        <td id="pre">4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<button (click)="home()" type="button" class="btn btn-outline-warning" data-mdb-ripple-color="dark">
+    Dashboard
+</button>
