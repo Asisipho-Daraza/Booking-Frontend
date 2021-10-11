@@ -1,33 +1,21 @@
+<!-- Search button -->
+
+
+
+
 <!-- Boxes -->
-<div class="container page-wrapper" *ngFor="let admins of admin" mt-5px>
-    <div class="page-inner">
-        <div class="row">
-            <div class="el-wrapper">
-                <div class="box-up">
-                    <img class="img" src="{{admins.image}}" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                            <span class="p-name">{{admins.hairnailname}}</span>
-                            <span class="p-company">{{admins.name}}'s Beauty Spa</span>
-                        </div>
-                        <div class="a-size">Available Length : <span class="size">S , M , L , XL</span></div>
-                    </div>
-                </div>
 
-                <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
+<div class="container">
 
-                    <a class="cart" (click)="book()">
-                        <span class="price">R{{admins.price}}</span>
-                        <span class="add-to-cart">
-                            <span class="txt">Book
-                                Appointment</span>
-                        </span>
-                    </a>
-                </div>
+    <div class="cards-list">
+
+        <div class="card 1" *ngFor="let admins of admin">
+            <div class="card_image"> <img src="{{admins.image}}" /> </div>
+            <div class="card_title title-white">
+                <p>{{admins.hairnailname}}</p>
             </div>
         </div>
+
     </div>
+
 </div>

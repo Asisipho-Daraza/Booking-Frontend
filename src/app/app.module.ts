@@ -13,14 +13,16 @@ import { BookingsComponent } from "./bookings/bookings.component";
 import { HairNailService } from "./services/hair-nail.service";
 import { HttpClientModule } from "@angular/common/http";
 import { OptionsComponent } from './options/options.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     LoginComponent,
     DashboardComponent,
     BookingsComponent,
-      OptionsComponent
+      OptionsComponent,
+      AdminComponent
    ],
   imports: [
     BrowserModule,

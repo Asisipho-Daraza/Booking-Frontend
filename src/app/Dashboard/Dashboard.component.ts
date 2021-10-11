@@ -17,12 +17,16 @@ export class DashboardComponent implements OnInit {
     this.load();
   }
 
-  async load() {
-    this.admin = await this.__hairnail.getAllDetails();
-    console.log(await this.__hairnail.getAllDetails());
-  }
+  // Routing
 
   book() {
     this.router.navigate(["/bookings"]);
+  }
+
+  //Get all hair and nais data
+
+  async load() {
+    this.admin = await this.__hairnail.getAllDetails();
+    console.log(await this.__hairnail.getAllDetails());
   }
 }
