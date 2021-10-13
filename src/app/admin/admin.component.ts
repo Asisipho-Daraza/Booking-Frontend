@@ -18,15 +18,6 @@ export class AdminComponent implements OnInit {
     private router: Router
   ) {}
 
-  // Form
-
-  adminForm = new FormGroup({
-    price: new FormControl(""),
-    image: new FormControl(""),
-    description: new FormControl(""),
-    id: new FormControl(""),
-  });
-
   adminId: any;
 
   ngOnInit() {
@@ -49,4 +40,8 @@ export class AdminComponent implements OnInit {
   //Edit Product
 
   // Delete Product
+
+  deleteDetail(admindata: any) {
+    this.__hairnail.deleteOneDetail(admindata.id);
+  }
 }

@@ -9,7 +9,7 @@
 
     <div class="cards-list">
 
-        <div class="card 1" *ngFor="let admins of admin">
+        <div class="card 1" *ngFor="let admins of admin" routerLink="/bookings/{{admins}}">
             <div class="card_image"> <img src="{{admins.image}}" /> </div>
             <div class="card_title title-white">
                 <p>{{admins.hairnailname}}</p>

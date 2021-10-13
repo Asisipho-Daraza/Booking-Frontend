@@ -1,0 +1,22 @@
+<div class="container py-3">
+    <a mdbBtn color="blue-grey" size="sm" outline="true" class="mb-4 shadow-none" routerLink="/admin">&#8678;&nbsp;Back
+        Home</a>
+    <!-- Default form login -->
+    <form class="text-center border border-light rounded p-5" [formGroup]="adminForm">
+        <h1 class="h1 mb-4">Phonebook Entry</h1>
+
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" formControlName="image" placeholder="Name">
+            <small *ngIf="__hairnail.form_errors.image" class="text-danger">{{__hairnail.form_errors.image.message}}</small>
+        </div>
+
+        <div class="form-group mb-3">
+            <input type="number" class="form-control" formControlName="price" placeholder="price">
+            <small *ngIf="__hairnail.form_errors.price" class="text-danger">{{__hairnail.form_errors.price.message}}</small>
+        </div>
+
+
+
+        <button mdbBtn color="info" block="true" size="sm" class="my-4 w-75 mx-auto" style="max-width: 400px;" type="submit" (click)="submitDetails()">Update</button>
+    </form>
+</div>

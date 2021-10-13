@@ -12,25 +12,31 @@ import { AppRoutingModule } from "./app-routing.module";
 import { BookingsComponent } from "./bookings/bookings.component";
 import { HairNailService } from "./services/hair-nail.service";
 import { HttpClientModule } from "@angular/common/http";
-import { OptionsComponent } from './options/options.component';
-import { AdminComponent } from './admin/admin.component';
+import { OptionsComponent } from "./options/options.component";
+import { AdminComponent } from "./admin/admin.component";
+import { ReactiveFormsModule } from "@angular/forms";
+import { ToastrModule } from "ngx-toastr";
+import { AdminModalComponent } from './admin-modal/admin-modal.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
     BookingsComponent,
-      OptionsComponent,
-      AdminComponent
-   ],
+    OptionsComponent,
+    AdminComponent,
+    AdminModalComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
+    ToastrModule.forRoot(),
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [HairNailService],
   bootstrap: [AppComponent],

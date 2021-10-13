@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
   // Routing
 
   book() {
-    this.router.navigate(["/bookings"]);
+    // this.router.navigate(["/bookings"]);
   }
 
   //Get all hair and nais data
