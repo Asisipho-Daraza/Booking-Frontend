@@ -10,7 +10,7 @@ import { AdminModalComponent } from "./admin-modal/admin-modal.component";
 const routes: Routes = [
   // { path: "", pathMatch: "full", redirectTo: "/dashboard" },
   // { path: "", redirectTo: "/dashboard", pathMatch: "full" },
-  { path: "somethng", component: DashboardComponent },
+  { path: "dashboard", component: DashboardComponent },
   { path: "login", component: LoginComponent },
   { path: "bookings", component: BookingsComponent },
   { path: "admin", component: AdminComponent },
