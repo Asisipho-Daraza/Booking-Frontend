@@ -10,6 +10,7 @@ import { HairNailService } from "../services/hair-nail.service";
 })
 export class DashboardComponent implements OnInit {
   admin: any = {};
+  styles: any = [];
 
   constructor(private __hairnail: HairNailService, private router: Router) {}
 
@@ -28,5 +29,11 @@ export class DashboardComponent implements OnInit {
   async load() {
     this.admin = await this.__hairnail.getAllDetails();
     console.log(await this.__hairnail.getAllDetails());
+  }
+
+  // Search Hair/Nail
+
+  async searchStyle(search_text: string) {
+    this.styles = await this.__hairnail.searchDetails(search_text);
   }
 }

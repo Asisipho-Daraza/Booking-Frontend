@@ -19,6 +19,8 @@ export class AdminComponent implements OnInit {
   ) {}
 
   adminId: any;
+  styles: any = [];
+  search: string;
 
   ngOnInit() {
     this.load();
@@ -35,6 +37,10 @@ export class AdminComponent implements OnInit {
 
   // Search Hair/Nail
 
+  async searchStyle(search_text: string) {
+    this.styles = await this.__hairnail.searchDetails(search_text);
+  }
+
   // Get single product
 
   //Edit Product
@@ -44,4 +50,10 @@ export class AdminComponent implements OnInit {
   deleteDetail(admindata: any) {
     this.__hairnail.deleteOneDetail(admindata.id);
   }
+
+  // deleteDetail() {
+  //   console.log(this.selected_contact.id);
+  //   this.__phonebook.deletePhonebook(this.selected_contact.id);
+  //   window.location.reload();
+  // }
 }

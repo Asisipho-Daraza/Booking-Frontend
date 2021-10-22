@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "bookings", component: BookingsComponent },
   { path: "admin", component: AdminComponent },
-  { path: "modal", component: AdminModalComponent },
+  { path: "edit", component: AdminModalComponent },
 ];
 
 @NgModule({
