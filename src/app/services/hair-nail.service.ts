@@ -61,6 +61,14 @@ export class HairNailService {
     );
   }
 
+  //Search
+
+  async searchDetails(search_text: string) {
+    return await this.__http
+      .get(`${this.url}/search?s=${search_text}`)
+      .toPromise();
+  }
+
   //Delete one admin detail
 
   deleteOneDetail(adminId: string) {
