@@ -42,12 +42,9 @@
     text-align: center;
 }
 
-// .img-wrapper img
-// {
-// }
 .info {
     width: 100%;
-    background: #000;
+    background: rgb(97, 168, 226);
     color: #fff;
     position: relative;
     padding: 40px 10px 20px 10px;
@@ -119,7 +116,7 @@
 }
 
 .price {
-    background: #e32d2c;
+    background: #082892;
     position: absolute;
     font-size: 1.3em;
     padding: 4px 13px;
@@ -200,3 +197,10 @@
     background: #191919;
     color: #fff;
 }
+
+// @media all and (max-width: 500px) {
+//     .listing {
+//         /* On small screens, we are no longer using row direction but column */
+//         flex-direction: column;
+//     }
+// }

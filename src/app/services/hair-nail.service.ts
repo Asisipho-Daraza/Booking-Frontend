@@ -72,6 +72,7 @@ export class HairNailService {
   //Delete one admin detail
 
   deleteOneDetail(adminId: string) {
+    console.log(adminId);
     return this.__http.delete(`${this.url}/${adminId}`).subscribe(
       (res: any) => {
         this.__toast.warning("Style  Deleted!", "Warning");

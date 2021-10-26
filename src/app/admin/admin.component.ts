@@ -49,7 +49,14 @@ export class AdminComponent implements OnInit {
 
   deleteDetail(admindata: any) {
     this.__hairnail.deleteOneDetail(admindata.id);
+    // window.location.reload();
   }
+
+  // deleteDetail() {
+  //   console.log(this.selected_detail.id);
+  //   this.__hairnail.deleteOneDetail(this.selected_detail.id);
+  //   window.location.reload();
+  // }
 
   // deleteDetail() {
   //   console.log(this.selected_contact.id);
